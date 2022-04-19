@@ -23,18 +23,24 @@
                 <button type="button" class="btn btn-lg btn-primary">Localização</button>
             </div>
             <div class="p-2 bd-highlight">
-                <button type="button" class="btn btn-lg btn-primary">Instagram</button>
+                <button type="button" class="btn btn-lg btn-primary Instagram">Instagram</button>
             </div>
         </div>
     </body>
     <script type="text/javascript">
         WhatsAppNumber = "5584987613982"
         WhatsApp = document.querySelector(".WhatsApp");
+        Instagram= document.querySelector(".Instagram");
 
         WhatsApp.addEventListener("click", WhatsAppNewTab, false);
+        Instagram.addEventListener("click", InstagramNewTab, false);
 
         function WhatsAppNewTab(){
             window.open(`https://api.whatsapp.com/send/?phone=${WhatsAppNumber}&text=Quero minhas unhas top!&app_absent=0`, "_blank");
+        }
+
+        function InstagramNewTab(){
+            window.open(`https://www.instagram.com/vi_naills/`, "_blank");
         }
     </script>
 </html>
